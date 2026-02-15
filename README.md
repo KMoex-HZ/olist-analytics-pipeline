@@ -60,7 +60,7 @@ docker-compose up -d
 Run the Python ingestion script to load raw CSVs into the Bronze layer.
 
 ```bash
-python ingestion/ingest.py
+python ingest_data.py
 
 ```
 
