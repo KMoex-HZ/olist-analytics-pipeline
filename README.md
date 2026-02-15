@@ -4,6 +4,12 @@
 
 This project demonstrates **Modern Data Stack (MDS)** best practices, facilitating the shift from traditional ETL to a scalable **ELT (Extract, Load, Transform)** pattern using PostgreSQL and dbt.
 
+<p align="center">
+  <img src="assets/lineage_graph.png" alt="dbt Lineage Graph" width="100%">
+  <br>
+  <em>Figure 1: dbt Lineage Graph showing data flow from Bronze to Gold layer.</em>
+</p>
+
 ## 🏗️ System Architecture
 
 The pipeline implements the **Medallion Architecture** to ensure data quality and lineage:
