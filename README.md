@@ -13,7 +13,7 @@ The pipeline implements the **Medallion Architecture** to ensure data quality an
 3. **Gold Layer (Serving):** Business-logic modeling into a **Star Schema** (Facts & Dimensions) optimized for BI tools.
 
 <p align="center">
-  <img src="assets/lineage_graph.png" alt="dbt Lineage Graph" width="100%">
+  <img src="assets/lineage_graph.png" alt="dbt Lineage Graph" width="500">
   <br>
   <em>Figure 1: dbt Lineage Graph showing data flow from Bronze to Gold layer.</em>
 </p>
