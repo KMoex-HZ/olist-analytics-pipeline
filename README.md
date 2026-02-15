@@ -1,4 +1,4 @@
-# Olist E-Commerce Data Warehouse
+# 🇧🇷 Olist E-Commerce Data Warehouse
 
 **A production-ready, containerized Analytics Engineering pipeline** designed to transform raw Brazilian E-Commerce public data into a structured, business-ready Data Warehouse.
 
