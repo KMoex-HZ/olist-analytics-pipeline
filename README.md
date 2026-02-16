@@ -95,5 +95,26 @@ dbt test
 
 ---
 
+## ⚠️ Production Considerations & Roadmap
+
+While this project demonstrates a functional ELT pipeline using the Modern Data Stack (dbt, Docker, Postgres), the following architectural improvements are planned for a production-scale deployment:
+
+1.  **Ingestion Scalability:**
+    * *Current:* Uses Pandas `to_sql` for rapid prototyping of initial data loads.
+    * *Production Plan:* Refactor to use PostgreSQL `COPY` command or incremental loading logic (Upsert) to handle GB-scale datasets without memory bottlenecks.
+
+2.  **Strict Medallion Architecture:**
+    * *Current:* Some Gold layer models reference Bronze sources directly for speed.
+    * *Production Plan:* Enforce strict layer isolation where Gold models only reference Silver (Staging) views to ensure complete data lineage and cleaner dependency graphs.
+
+3.  **Dimensional Modeling Refinement:**
+    * *Current:* Implements a "One-Big-Table" (OBT) approach in `fact_orders` for immediate BI consumption.
+    * *Production Plan:* Fully materialize `dim_customers` and `dim_products` as separate tables to strictly adhere to Kimball’s Star Schema principles.
+
+4.  **Security Best Practices:**
+    * *Current:* Hardcoded credentials for local Docker networking convenience.
+    * *Production Plan:* Externalize all secrets using `.env` files and Docker Secrets management.
+---
+
 **Author:** Caelan Zhou
 **License:** MIT License
