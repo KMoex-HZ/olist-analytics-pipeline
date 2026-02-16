@@ -1,5 +1,10 @@
 # 🇧🇷 Olist E-Commerce Data Warehouse
 
+![dbt](https://img.shields.io/badge/Transformation-dbt-FF694B?style=for-the-badge&logo=dbt)
+![Postgres](https://img.shields.io/badge/Warehouse-PostgreSQL-336791?style=for-the-badge&logo=PostgreSQL)
+![Python](https://img.shields.io/badge/Ingestion-Python-3776AB?style=for-the-badge&logo=Python)
+![Docker](https://img.shields.io/badge/Infrastructure-Docker-2496ED?style=for-the-badge&logo=Docker)
+
 **A production-ready, containerized Analytics Engineering pipeline** designed to transform raw Brazilian E-Commerce public data into a structured, business-ready Data Warehouse.
 
 This project demonstrates **Modern Data Stack (MDS)** best practices, facilitating the shift from traditional ETL to a scalable **ELT (Extract, Load, Transform)** pattern using PostgreSQL and dbt.
