@@ -14,7 +14,7 @@ This project demonstrates **Modern Data Stack (MDS)** best practices, facilitati
 The pipeline implements the **Medallion Architecture** to ensure data quality and lineage:
 
 <p align="center">
-  <img src="https://assets/architecture.png" alt="Olist System Architecture" width="800">
+  <img src="https://assets/architecture.jpeg" alt="Olist System Architecture" width="800">
   <br>
   <em>Figure 1: High-level System Architecture - From Raw CSVs to Analytics Ready Star Schema.</em>
 </p>
