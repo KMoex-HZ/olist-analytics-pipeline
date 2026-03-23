@@ -122,5 +122,6 @@ While this project demonstrates a functional ELT pipeline using the Modern Data 
     * *Production Plan:* Externalize all secrets using `.env` files and Docker Secrets management.
 ---
 
-**Author:** Caelan Zhou
+**Author:** Khairunnisa Maharani
+
 **License:** MIT License
